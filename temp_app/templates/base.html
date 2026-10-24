@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Space | Personal Website</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <nav>
+        <h2>MY SPACE ✦</h2>
+
+        <div>
+            <a href="/">ჩემ შესახებ</a>
+            <a href="/hobbies/">ჩემი ჰობები</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <div class="card">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </main>
+
+    <footer>
+        Crafted with Django · My Personal Space
+    </footer>
+
+</body>
+</html>
